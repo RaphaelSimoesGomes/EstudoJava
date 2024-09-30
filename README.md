@@ -1,16 +1,20 @@
-![thumbnail-Formação Java (3)](https://user-images.githubusercontent.com/66698429/226652162-77d758f2-3d34-4f6d-bb9b-37b3c00d0759.png)
+![thumbnail-Desafio Java (2)](https://user-images.githubusercontent.com/66698429/227000674-0d88d9f6-cef8-47c3-87b4-b83ff7db4a13.png)
 
 
-# Java: trabalhando com listas e coleções de dados
+# Desafio
 
-Projeto desenvolvido no terceiro curso da formação Java da Alura
+
+Vamos implementar uma aplicação para consultar um endereço a partir de um CEP e salvar as informações em um arquivo json.
 
 
 ## 🔨 Objetivos do projeto
 
-- Mergulhar mais profundamente em Java, entendendo a hierarquia de classes e métodos;
-- Aprender a representar uma lista de objetos; 
-- Conhecer os recursos para manipulação dessa lista, como inclusão, exclusão, ordenação;
-- Fazer casting de objetos e identificar o tipo dos mesmo;
-- Construir os objetos já com valores e com diferentes critérios;
-- Avançar nos estudos e entender novos conceitos primordiais para o desenvolvimento de aplicações back-end.
+- Criar uma classe que representa um endereço (cep, uf, cidade, bairro, logradouro e complemento);
+- Criar uma classe que consulta a API *ViaCEP* para buscar um endereço a partir de um cep (exemplo: https://viacep.com.br/ws/04101300/json);
+- Criar uma classe que cria um arquivo json contendo os dados de um objeto `Endereco`;
+- Criar uma classe com método main que deve solicitar ao usuário que informe um CEP e na sequencia utilizar as classes para consultar a api ViaCEP e salvar os dados do endereço em um arquivo json.
+
+## Observações:
+- Utilize a biblioteca GSon para converter o JSON devolvido pela API ViaCEP em um objeto `Endereco`;
+- Utilize a biblioteca GSon para salvar um objeto `Endereco` em um arquivo .json;
+- O arquivo deve ter como nome o cep informado (exemplo: `04101300.json`);
