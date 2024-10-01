@@ -1,5 +1,8 @@
+
 import moldels.ConsultaCep;
 import moldels.Endereco;
+import moldels.GeradorDeArquivo;
+
 
 import java.util.Scanner;
 
@@ -17,6 +20,15 @@ public class CodigoPrincipal {
 
         System.out.println(endereco);
         System.out.print(consultaCep.toString());
+
+        GeradorDeArquivo geradorDeArquivo = new GeradorDeArquivo();
+        try {
+        geradorDeArquivo.salvarJson(endereco);
+
+        }catch (Exception e) {
+            System.out.println(e);
+            System.out.println("Finalizando");
+        }
 
 
     }
